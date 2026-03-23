@@ -60,22 +60,13 @@ export const TEAM_MEMBERS: TeamMember[] = [
         id: 7,
         name: 'Shrinesh T M',
         role: 'Event Management Lead',
-        image: '/assets/members/SHRINESH T/IMG-20260115-WA0064.jpg',
+        image: '/assets/members/SHRINESH T/srinesh.jpg',
         bio: 'Plans and executes chapter events and workshops.',
         socials: { linkedin: 'https://www.linkedin.com/in/shrinesh-t-m-788a29293/' },
         size: 'small'
     },
     {
         id: 8,
-        name: 'Sarathi Chandran R',
-        role: 'Entrepreneurship Lead',
-        image: '/assets/members/SARATHI CHANDRAN/IMG-20260115-WA0072.jpg',
-        bio: 'Drives innovative projects and initiatives within the chapter.',
-        socials: { linkedin: 'https://www.linkedin.com/in/sarathi-chandran-r-10a923323/' },
-        size: 'medium'
-    },
-    {
-        id: 9,
         name: 'Akshaya KV',
         role: 'Public Relations Lead',
         image: '/assets/members/AKSHAYA KV/IMG-20260115-WA0075.jpg',
@@ -84,17 +75,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'small'
     },
     {
-        id: 10,
-        name: 'Prashanth Reddy',
-        role: 'Social Media Lead',
-        image: '/assets/members/PRASANTH REDDY/IMG-20260115-WA0080.jpg',
-        bio: "Manages the chapter's social media presence and online engagement.",
-        socials: { linkedin: 'https://www.linkedin.com/in/prasanth-reddy-7163a0324/' },
-        size: 'small',
-        imagePosition: 'center 25%'
-    },
-    {
-        id: 11,
+        id: 9,
         name: 'Didhiti Rai',
         role: 'Industry Connect Lead',
         image: '/assets/members/DIDHITI RAI/IMG-20260115-WA0069.jpg',
@@ -103,7 +84,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'medium'
     },
     {
-        id: 12,
+        id: 10,
         name: 'Ayisha Hemni K',
         role: 'Creative Lead',
         image: '/assets/members/AYISHA HEMINI/Ayisha_Hemini.jpeg',
@@ -112,7 +93,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'small'
     },
     {
-        id: 13,
+        id: 11,
         name: 'Aryan Gupta',
         role: 'Sponsorship Lead',
         image: '/assets/members/ARYAN GUPTA/IMG-20260115-WA0079.jpg',
@@ -121,34 +102,34 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'small'
     },
     {
-        id: 14,
+        id: 12,
         name: 'Siddharth S',
         role: 'Technical Co-Head',
         image: '/assets/members/Siddharth S/IMG-20260205-WA0005~2.jpg',
         bio: 'Supports technical initiatives and development activities within the chapter.',
         socials: { linkedin: '#' },
-        size: 'small'
+        size: 'medium'
     },
     {
-        id: 15,
+        id: 13,
         name: 'Abhay',
         role: 'Public Relations Co-Head',
         image: '/assets/members/Abhay/Abhay.jpg',
         bio: 'Assists in managing communications and public outreach.',
         socials: { linkedin: '#' },
-        size: 'small'
+        size: 'medium'
     },
     {
-        id: 16,
+        id: 14,
         name: 'Abhinaya',
         role: 'Social Media Co-Head',
         image: '/assets/members/Abhinaya/Abhinaya.jpg',
         bio: 'Supports social media strategy and online engagement.',
         socials: { linkedin: '#' },
-        size: 'small'
+        size: 'medium'
     },
     {
-        id: 17,
+        id: 15,
         name: 'Vijeta Sargam',
         role: 'Entrepreneurship Co-Head',
         image: '/assets/members/Vijeta Sargam/Vijeta.jpg',
@@ -157,7 +138,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'small'
     },
     {
-        id: 18,
+        id: 16,
         name: 'Akhilesh',
         role: 'Entrepreneurship Co-Head',
         image: '/assets/members/Akhilesh/Akhilesh.jpg',
@@ -166,7 +147,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'small'
     },
     {
-        id: 19,
+        id: 17,
         name: 'Anuska',
         role: 'Design & Creatives Co-Head',
         image: '/assets/members/Anuska/Anuska.jpg',
@@ -175,7 +156,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'small'
     },
     {
-        id: 20,
+        id: 18,
         name: 'Akshat Tayal',
         role: 'Sponsorship Co-Head',
         image: '/assets/members/Akshat Tayal/akshat.jpg',
@@ -184,7 +165,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'small'
     },
     {
-        id: 21,
+        id: 19,
         name: 'Ayush',
         role: 'Design Head',
         image: '/assets/members/Ayush/Ayush.jpg',
@@ -193,7 +174,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'medium'
     },
     {
-        id: 22,
+        id: 20,
         name: 'Azhara KS',
         role: 'Design Co-Head',
         image: '/assets/members/Azhara.ks/Azhara.jpg',
@@ -202,7 +183,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'small'
     },
     {
-        id: 23,
+        id: 21,
         name: 'Kavyadharshini M',
         role: 'Design & Creatives Co-Head',
         image: '/assets/members/Kavyadharhshini M/Kavyadharshini.jpg',
