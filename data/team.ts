@@ -108,7 +108,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         image: '/assets/members/Siddharth S/IMG-20260205-WA0005~2.jpg',
         bio: 'Supports technical initiatives and development activities within the chapter.',
         socials: { linkedin: '#' },
-        size: 'medium'
+        size: 'small'
     },
     {
         id: 13,
@@ -117,7 +117,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         image: '/assets/members/Abhay/Abhay.jpg',
         bio: 'Assists in managing communications and public outreach.',
         socials: { linkedin: '#' },
-        size: 'medium'
+        size: 'small'
     },
     {
         id: 14,
@@ -126,7 +126,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         image: '/assets/members/Abhinaya/Abhinaya.jpg',
         bio: 'Supports social media strategy and online engagement.',
         socials: { linkedin: '#' },
-        size: 'medium'
+        size: 'small'
     },
     {
         id: 15,
