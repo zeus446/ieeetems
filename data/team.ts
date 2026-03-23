@@ -84,17 +84,17 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'small'
     },
     {
-        id: 13,
+        id: 10,
         name: 'Prashanth Reddy',
         role: 'Social Media Lead',
         image: '/assets/members/PRASANTH REDDY/IMG-20260115-WA0080.jpg',
-        bio: 'Manages the chapter\'s social media presence and online engagement.',
+        bio: "Manages the chapter's social media presence and online engagement.",
         socials: { linkedin: 'https://www.linkedin.com/in/prasanth-reddy-7163a0324/' },
         size: 'small',
         imagePosition: 'center 25%'
     },
     {
-        id: 10,
+        id: 11,
         name: 'Didhiti Rai',
         role: 'Industry Connect Lead',
         image: '/assets/members/DIDHITI RAI/IMG-20260115-WA0069.jpg',
@@ -103,7 +103,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'medium'
     },
     {
-        id: 11,
+        id: 12,
         name: 'Ayisha Hemni K',
         role: 'Creative Lead',
         image: '/assets/members/AYISHA HEMINI/Ayisha_Hemini.jpeg',
@@ -112,11 +112,101 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'small'
     },
     {
-        id: 12,
+        id: 13,
         name: 'Aryan Gupta',
         role: 'Sponsorship Lead',
         image: '/assets/members/ARYAN GUPTA/IMG-20260115-WA0079.jpg',
         bio: 'Secures sponsorships and funding for chapter events and initiatives.',
+        socials: { linkedin: '#' },
+        size: 'small'
+    },
+    {
+        id: 14,
+        name: 'Siddharth S',
+        role: 'Technical Co-Head',
+        image: '/assets/members/Siddharth S/IMG-20260205-WA0005~2.jpg',
+        bio: 'Supports technical initiatives and development activities within the chapter.',
+        socials: { linkedin: '#' },
+        size: 'small'
+    },
+    {
+        id: 15,
+        name: 'Abhay',
+        role: 'Public Relations Co-Head',
+        image: '/assets/members/Abhay/Abhay.jpg',
+        bio: 'Assists in managing communications and public outreach.',
+        socials: { linkedin: '#' },
+        size: 'small'
+    },
+    {
+        id: 16,
+        name: 'Abhinaya',
+        role: 'Social Media Co-Head',
+        image: '/assets/members/Abhinaya/Abhinaya.jpg',
+        bio: 'Supports social media strategy and online engagement.',
+        socials: { linkedin: '#' },
+        size: 'small'
+    },
+    {
+        id: 17,
+        name: 'Vijeta Sargam',
+        role: 'Entrepreneurship Co-Head',
+        image: '/assets/members/Vijeta Sargam/Vijeta.jpg',
+        bio: 'Drives entrepreneurial initiatives and innovation programs.',
+        socials: { linkedin: '#' },
+        size: 'small'
+    },
+    {
+        id: 18,
+        name: 'Akhilesh',
+        role: 'Entrepreneurship Co-Head',
+        image: '/assets/members/Akhilesh/Akhilesh.jpg',
+        bio: 'Collaborates on entrepreneurship and startup-focused activities.',
+        socials: { linkedin: '#' },
+        size: 'small'
+    },
+    {
+        id: 19,
+        name: 'Anuska',
+        role: 'Design & Creatives Co-Head',
+        image: '/assets/members/Anuska/Anuska.jpg',
+        bio: 'Supports branding, graphics, and creative direction.',
+        socials: { linkedin: '#' },
+        size: 'small'
+    },
+    {
+        id: 20,
+        name: 'Akshat Tayal',
+        role: 'Sponsorship Co-Head',
+        image: '/assets/members/Akshat Tayal/akshat.jpg',
+        bio: 'Assists in securing sponsorships and funding partnerships.',
+        socials: { linkedin: '#' },
+        size: 'small'
+    },
+    {
+        id: 21,
+        name: 'Ayush',
+        role: 'Design Head',
+        image: '/assets/members/Ayush/Ayush.jpg',
+        bio: 'Leads the design team and oversees branding and creative direction.',
+        socials: { linkedin: '#' },
+        size: 'medium'
+    },
+    {
+        id: 22,
+        name: 'Azhara KS',
+        role: 'Design Co-Head',
+        image: '/assets/members/Azhara.ks/Azhara.jpg',
+        bio: 'Supports design strategy and creative execution.',
+        socials: { linkedin: '#' },
+        size: 'small'
+    },
+    {
+        id: 23,
+        name: 'Kavyadharshini M',
+        role: 'Design & Creatives Co-Head',
+        image: '/assets/members/Kavyadharhshini M/Kavyadharshini.jpg',
+        bio: 'Contributes to visual branding and creative content development.',
         socials: { linkedin: '#' },
         size: 'small'
     }
@@ -139,7 +229,7 @@ export const ADVISORS: Advisor[] = [
         name: 'Abishai Gosula',
         role: 'Founding Advisor',
         image: '/assets/members/ABISHAI GOSULA/Abishai_new.jpeg',
-        bio: 'An integral pillar in founding IEEE TEMS SRM, Abishai\'s dedication and strategic guidance helped establish the chapter\'s strong foundation for innovation and leadership.',
+        bio: "An integral pillar in founding IEEE TEMS SRM, Abishai's dedication and strategic guidance helped establish the chapter's strong foundation for innovation and leadership.",
         socials: { linkedin: 'https://www.linkedin.com/in/abishai-george-e-gosula/' }
     }
 ];
