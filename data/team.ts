@@ -147,12 +147,13 @@ export const TEAM_MEMBERS: TeamMember[] = [
         id: 12,
         name: 'Nitheesh',
         role: 'Social Media Lead',
-        image: '/assets/members/NITHEESH/Nitheesh.jpg',
+        image: '/assets/members/Nitheesh/nitheesh.jpg',
         bio: 'Leads social media strategy and digital engagement.',
         socials: { linkedin: '#' },
         size: 'medium',
         department: 'social',
         isCoHead: false
+        
     },
 
     // ================= EVENTS =================
