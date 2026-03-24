@@ -95,7 +95,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         department: 'pr',
         isCoHead: true
     },
-     {
+    {
         id: 13,
         name: 'Abhinaya',
         role: 'Social Media Co-Lead',
@@ -153,7 +153,28 @@ export const TEAM_MEMBERS: TeamMember[] = [
         size: 'medium',
         department: 'social',
         isCoHead: false
-        
+    },
+    {
+        id: 19,
+        name: 'Anuska',
+        role: 'Social Media Co-Lead',
+        image: '/assets/members/Anuska/Anuska.jpg',
+        bio: 'Contributes to social engagement strategy and digital outreach initiatives.',
+        socials: { linkedin: '#' },
+        size: 'small',
+        department: 'social',
+        isCoHead: true
+    },
+    {
+        id: 20,
+        name: 'Ayush',
+        role: 'Social Media Co-Lead',
+        image: '/assets/members/Ayush/Ayush.jpg',
+        bio: 'Supports content creation and online branding activities.',
+        socials: { linkedin: '#' },
+        size: 'small',
+        department: 'social',
+        isCoHead: true
     },
 
     // ================= EVENTS =================
@@ -181,17 +202,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
         department: 'creative',
         isCoHead: false
     },
-    {
-        id: 16,
-        name: 'Anuska',
-        role: 'Creative Co-Lead',
-        image: '/assets/members/Anuska/Anuska.jpg',
-        bio: 'Supports branding, graphics, and creative direction.',
-        socials: { linkedin: '#' },
-        size: 'small',
-        department: 'creative',
-        isCoHead: true
-    },
+    
     {
         id: 17,
         name: 'Azhara KS',
@@ -212,6 +223,30 @@ export const TEAM_MEMBERS: TeamMember[] = [
         socials: { linkedin: '#' },
         size: 'small',
         department: 'creative',
+        isCoHead: true
+    },
+
+    // ================= SPONSORSHIP =================
+    {
+        id: 21,
+        name: 'Aryan Gupta',
+        role: 'Sponsorship Lead',
+        image: '/assets/members/ARYAN GUPTA/IMG-20260115-WA0079.jpg',
+        bio: 'Leads sponsorship strategy and corporate partnerships for the chapter.',
+        socials: { linkedin: '#' },
+        size: 'medium',
+        department: 'sponsorship',
+        isCoHead: false
+    },
+    {
+        id: 22,
+        name: 'Akshat Tayal',
+        role: 'Sponsorship Co-Lead',
+        image: '/assets/members/Akshat Tayal/akshat.jpg',
+        bio: 'Supports sponsorship outreach and manages brand collaborations.',
+        socials: { linkedin: '#' },
+        size: 'small',
+        department: 'sponsorship',
         isCoHead: true
     }
 ];
