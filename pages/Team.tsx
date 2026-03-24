@@ -4,28 +4,38 @@ import { useState } from 'react'
 import { TEAM_MEMBERS } from '@/data/team'
 
 export default function Team() {
-  const [openDomain, setOpenDomain] = useState<string | null>(null)
+  const [openDepartment, setOpenDepartment] = useState<string | null>(null)
 
-  const coreLeads = TEAM_MEMBERS.filter(member =>
-    ['Chairman', 'Vice Chairman', 'Secretary'].includes(member.role)
+  // Core Members
+  const coreMembers = TEAM_MEMBERS.filter(
+    member => member.department === 'core'
   )
 
-  const heads = TEAM_MEMBERS.filter(member => member.role === 'Head')
+  // Domain Leads (not co-leads and not core)
+  const leads = TEAM_MEMBERS.filter(
+    member =>
+      member.department !== 'core' &&
+      member.isCoHead === false
+  )
 
-  const getCoHeads = (domain: string) =>
+  // Get Co-Leads for a department
+  const getCoLeads = (department: string) =>
     TEAM_MEMBERS.filter(
-      member => member.role === 'Co-Head' && member.domain === domain
+      member =>
+        member.department === department &&
+        member.isCoHead === true
     )
 
   return (
     <div className="px-6 py-12 max-w-7xl mx-auto">
 
+      {/* ================= CORE TEAM ================= */}
       <h2 className="text-3xl font-bold mb-8 text-center">
         Core Team
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-8 mb-16">
-        {coreLeads.map(member => (
+      <div className="grid md:grid-cols-4 gap-8 mb-16">
+        {coreMembers.map(member => (
           <div
             key={member.id}
             className="bg-white rounded-2xl shadow-lg p-4 text-center"
@@ -45,38 +55,43 @@ export default function Team() {
         ))}
       </div>
 
+      {/* ================= DOMAIN LEADS ================= */}
       <h2 className="text-3xl font-bold mb-8 text-center">
-        Domain Heads
+        Domain Leads
       </h2>
 
       <div className="grid md:grid-cols-3 gap-10">
-        {heads.map(head => (
-          <div key={head.id}>
+        {leads.map(lead => (
+          <div key={lead.id}>
 
+            {/* Lead Card */}
             <div
               onClick={() =>
-                setOpenDomain(
-                  openDomain === head.domain ? null : head.domain!
+                setOpenDepartment(
+                  openDepartment === lead.department
+                    ? null
+                    : lead.department!
                 )
               }
               className="bg-white rounded-2xl shadow-lg p-4 cursor-pointer hover:shadow-xl transition"
             >
               <img
-                src={head.image}
-                alt={head.name}
+                src={lead.image}
+                alt={lead.name}
                 className="w-full h-64 object-cover rounded-xl"
               />
               <h3 className="mt-4 text-xl font-semibold">
-                {head.name}
+                {lead.name}
               </h3>
               <p className="text-gray-600">
-                {head.domain} Head
+                {lead.role}
               </p>
             </div>
 
-            {openDomain === head.domain && (
-              <div className="mt-6 space-y-4">
-                {getCoHeads(head.domain!).map(co => (
+            {/* Co-Leads */}
+            {openDepartment === lead.department && (
+              <div className="mt-6 grid gap-4">
+                {getCoLeads(lead.department!).map(co => (
                   <div
                     key={co.id}
                     className="bg-gray-100 rounded-xl p-4"
@@ -90,7 +105,7 @@ export default function Team() {
                       {co.name}
                     </h4>
                     <p className="text-sm text-gray-600">
-                      Co-Head
+                      {co.role}
                     </p>
                   </div>
                 ))}
