@@ -42,12 +42,12 @@ export default function Team() {
   return (
     <div className="px-6 py-20 max-w-7xl mx-auto">
 
-      {/* ================= CORE ================= */}
-      <h2 className="text-4xl md:text-5xl font-semibold text-center mb-14 tracking-tight bg-gradient-to-r from-black to-gray-500 bg-clip-text text-transparent">
-        Core Team
+      {/* ================= CORE TEAM ================= */}
+      <h2 className="text-4xl md:text-5xl font-semibold text-center mb-14 tracking-tight bg-gradient-to-r from-black via-gray-700 to-gray-400 bg-clip-text text-transparent">
+        Core Members
       </h2>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-24">
+      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-28">
         {coreMembers.map(member => (
           <div
             key={member.id}
@@ -79,7 +79,7 @@ export default function Team() {
       </div>
 
       {/* ================= DOMAIN LEADS ================= */}
-      <h2 className="text-4xl md:text-5xl font-semibold text-center mb-14 tracking-tight bg-gradient-to-r from-black to-gray-500 bg-clip-text text-transparent">
+      <h2 className="text-4xl md:text-5xl font-semibold text-center mb-14 tracking-tight bg-gradient-to-r from-black via-gray-700 to-gray-400 bg-clip-text text-transparent">
         Domain Leads
       </h2>
 
@@ -115,58 +115,62 @@ export default function Team() {
         ))}
       </div>
 
-{/* ================= MODAL ================= */}
-{activeDepartment && (
-  <div
-    className="fixed inset-0 bg-black/60 backdrop-blur-md flex items-center justify-center z-50"
-    onClick={() => setActiveDepartment(null)}
-  >
-    <div
-      className="bg-white rounded-3xl w-full max-w-6xl mx-4 md:mx-6 max-h-[90vh] flex flex-col overflow-hidden"
-      onClick={(e) => e.stopPropagation()}
-    >
-
-      {/* ===== STICKY HEADER ===== */}
-      <div className="sticky top-0 bg-white z-10 flex justify-between items-center px-6 py-5 border-b">
-        <h3 className="text-2xl md:text-3xl font-semibold tracking-tight">
-          Co-Leads
-        </h3>
-
-        <button
+      {/* ================= MODAL ================= */}
+      {activeDepartment && (
+        <div
+          className="fixed inset-0 bg-black/60 backdrop-blur-md flex items-center justify-center z-50"
           onClick={() => setActiveDepartment(null)}
-          className="text-lg font-bold bg-gray-100 rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-gray-200 transition"
         >
-          ✕
-        </button>
-      </div>
+          <div
+            className="bg-white rounded-3xl w-full max-w-6xl mx-4 md:mx-6 max-h-[90vh] flex flex-col overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
 
-      {/* ===== SCROLLABLE CONTENT ===== */}
-      <div className="overflow-y-auto px-6 py-8">
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {getCoLeads(activeDepartment).map(co => (
-            <div key={co.id} className="text-center">
-              <div className="overflow-hidden rounded-3xl shadow-xl">
-                <img
-                  src={co.image}
-                  alt={co.name}
-                  className="w-full h-64 object-cover transition duration-500 hover:scale-105"
-                />
-              </div>
+            {/* ===== Sticky Header ===== */}
+            <div className="sticky top-0 bg-white z-10 flex justify-between items-center px-6 py-5 border-b">
+              <h3 className="text-2xl md:text-3xl font-semibold tracking-tight">
+                Co-Leads
+              </h3>
 
-              <h4 className="mt-5 text-xl font-semibold tracking-tight">
-                {co.name}
-              </h4>
-              <p className="text-gray-600 mt-1">
-                {co.role}
-              </p>
-              <p className="text-gray-500 text-sm mt-3 leading-relaxed">
-                {co.bio}
-              </p>
+              <button
+                onClick={() => setActiveDepartment(null)}
+                className="text-lg font-bold bg-gray-100 rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-gray-200 transition"
+              >
+                ✕
+              </button>
             </div>
-          ))}
+
+            {/* ===== Scrollable Content ===== */}
+            <div className="overflow-y-auto px-6 py-8">
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                {getCoLeads(activeDepartment).map(co => (
+                  <div key={co.id} className="text-center">
+                    <div className="overflow-hidden rounded-3xl shadow-xl">
+                      <img
+                        src={co.image}
+                        alt={co.name}
+                        className="w-full h-64 object-cover transition duration-500 hover:scale-105"
+                      />
+                    </div>
+
+                    <h4 className="mt-5 text-xl font-semibold tracking-tight">
+                      {co.name}
+                    </h4>
+                    <p className="text-gray-600 mt-1">
+                      {co.role}
+                    </p>
+                    <p className="text-gray-500 text-sm mt-3 leading-relaxed">
+                      {co.bio}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
+      )}
 
     </div>
-  </div>
-)}
+  )
+}
